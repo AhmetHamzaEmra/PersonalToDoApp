@@ -42,10 +42,20 @@ foreach ($row as $key) {
 
 	<meta name="viewport" content="width=device-width,  initial-scale = 1.0">
 
+	<style type="text/css">
+		body{
+			background: url("img/x.jpg");
+    		background-repeat: no-repeat;
+    		background-attachment: fixed;
+    		background-position: center; 
+		}
+	</style>
+
 </head>
 <body>
-	<h2>The username or password is wrong!<br>Please try again!<br></h2>
-	<a href="index.php">Go Back</a>
+	<h2 style="text-align: center;">The username or password is wrong!<br>Please try again!<br></h2>
+	<br/>
+	<a style="font-size: 12px; border-radius: 8px; padding: 12px 24px; font-weight: bold;padding: 10;border:  2px solid #008CBA; background-color: white;" href="index.php">Try Again</a>
 
 </body>
 </html>

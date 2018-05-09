@@ -16,6 +16,13 @@ require_once 'app/init.php';
 	<link rel="stylesheet" href="css/main.css">
 
 	<meta name="viewport" content="width=device-width,  initial-scale = 1.0">
+	<style type="text/css">
+		body{
+			background-image: url(img/login.jpg);
+			background-size: 1920px 1080px;
+    		background-repeat: no-repeat;
+		}
+	</style>
 
 </head>
 <body style="text-align: center; margin: 10px; padding: 10px">
@@ -27,9 +34,9 @@ require_once 'app/init.php';
 		  Password:<br>
 		  <input type="password" name="password">
 		  <br><br>
-		  <input type="submit" >
+		  <input style="background-color: #4CAF50;   color: white; padding: 5px 7px; margin: 8px 0;  border: none; cursor: pointer;width: 5%;" type="submit">
 		</form> 
-		<a href="register.php">Register</a>
+		<a style="background-color: white;  padding: 5px 7px ; color: #008CBA; border: 2px solid #008CBA;" href="register.php">Register</a>
 
 </body>
 </html>

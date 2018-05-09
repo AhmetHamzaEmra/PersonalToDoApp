@@ -28,10 +28,15 @@ $lists = $listsQuery->rowCount() ? $listsQuery : [];
 	<link rel="stylesheet" href="css/main.css">
 
 	<meta name="viewport" content="width=device-width,  initial-scale = 1.0">
+	<style type="text/css">
+		body {
+			background-image: url("img/paper-and-a-pencil.jpg");
+		}
+	</style>
 
 </head>
 <body>
-	<a style="float:right; font-weight: bold;padding: 10;border: none; background: none;" href="index.php">LogOut!</a>
+	<a style="float:right; font-size: 12px; border-radius: 8px; padding: 12px 24px; font-weight: bold;padding: 10;border:  2px solid #008CBA; background-color: white;" href="index.php">Logout!</a><br/>
 
 	<?php foreach($lists as $list): ?>
 
@@ -91,9 +96,11 @@ $lists = $listsQuery->rowCount() ? $listsQuery : [];
 	<?php endforeach; ?>
 
 	<form style="text-align: center; margin: 10px; padding-bottom: 10px" action="addlist.php" method="post" class="item-add">
-		<h3 class="header">Add New List</h3>
-		<input style="width: 60%;" type="text" name="listname" placeholder="Type a new list name here" class="input" autocomplete="off" required>
-		<input style="width: 60%;" type="submit" name="add" class="submit">
+		<h3 class="header">New List</h3>
+		<br/>
+		<input style="width: 25%;" type="text" name="listname" placeholder="Type a new list name here" class="input" autocomplete="off" required>
+		<br/>
+		<input style="width: 10%;" type="submit" name="add" class="submit">
 	</form>
 
 </body>

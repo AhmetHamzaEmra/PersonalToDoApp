@@ -100,5 +100,13 @@ a {
 
 }
 
+.logout {
+	float:right; 
+	font-weight: 
+	bold;padding: 10;
+	border:  2px solid #008CBA; 
+	background-color: white;
+}
+
 
 
